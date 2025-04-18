@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShobBazar – সবকিছুর বাজার</title>
+  <style>
+    body { font-family: sans-serif; margin: 0; padding: 0; background: #f8f9fa; }
+    header { background: #00a884; color: white; padding: 20px; text-align: center; }
+    h1 { margin: 0; font-size: 24px; }
+    .container { padding: 20px; max-width: 1000px; margin: auto; }
+    .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .card { background: white; border-radius: 10px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; }
+    .card img { width: 100%; border-radius: 8px; }
+    .card h3 { margin: 10px 0 5px; }
+    .card p { margin: 0 0 10px; color: #555; }
+    .form-section { margin-top: 40px; }
+    form { display: grid; gap: 10px; }
+    input, button { padding: 10px; border-radius: 5px; border: 1px solid #ccc; font-size: 16px; }
+    button { background: #00a884; color: white; border: none; cursor: pointer; }
+    button:hover { background: #008f72; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ShobBazar – সবকিছুর বাজার</h1>
+  </header>
+  <div class="container">
+    <div class="products">
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="বিস্কিট">
+        <h3>বিস্কিট / Biscuit</h3>
+        <p>৳120/কার্টুন</p>
+        <button>অর্ডার করুন</button>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="চানাচুর">
+        <h3>চানাচুর / Chanachur</h3>
+        <p>৳95/কার্টুন</p>
+        <button>অর্ডার করুন</button>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="চকলেট">
+        <h3>চকলেট / Chocolate</h3>
+        <p>৳150/কার্টুন</p>
+        <button>অর্ডার করুন</button>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <h2>অর্ডার ফর্ম</h2>
+      <form name="order-form" method="POST" data-netlify="true">
+        <input type="text" name="name" placeholder="আপনার নাম" required />
+        <input type="tel" name="phone" placeholder="মোবাইল নম্বর" required />
+        <input type="text" name="address" placeholder="ঠিকানা" required />
+        <button type="submit">অর্ডার জমা দিন</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
